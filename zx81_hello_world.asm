@@ -18,6 +18,7 @@ end_program:
  
 ;-
 
+dfile equ display_area ; needed for prologue
 display_area: ; collapsed display (1k, else all the lines should be completed)
   halt ; needed at the beginning of the display memory to sync screen output
   ;-
