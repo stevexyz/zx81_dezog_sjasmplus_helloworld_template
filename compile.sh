@@ -2,7 +2,7 @@
 
 set -e
 
-./sjasmplus_1.21.0 \
+sjasmplus \
     --nologo \
     --msg=war \
     --fullpath \

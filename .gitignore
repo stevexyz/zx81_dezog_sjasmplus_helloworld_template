@@ -5,8 +5,11 @@
 *.sld.txt
 
 # temp
-sjasmplus_1.21.0
 .tmp/
+sjasmplus_1.21.0
+sjasmplus
+*.idx
+*.rom
 *.old
 *.bak
 *.tmp

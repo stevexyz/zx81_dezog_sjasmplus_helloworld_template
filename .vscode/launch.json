@@ -16,10 +16,10 @@
 					"path": "${workspaceFolder}/zx81_hello_world.sld",
 				}
 			],
-			//"startAutomatically": false,
+			"startAutomatically": false,
 			"rootFolder": "${workspaceFolder}",
 			"load": "zx81_hello_world.p",
-			//"tmpDir": ".tmp",
+			"tmpDir": ".tmp",
 		},
     ],
 }
