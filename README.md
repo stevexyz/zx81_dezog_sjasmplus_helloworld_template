@@ -8,8 +8,10 @@ Required to be installed: Visual Studio Code with DeZog extension (https://githu
 
 How to start?
 - Start vscode with "code ." inside the root repo directory
-- Set a breakpoint inside the zx81_hello_world.asm on the infinite loop
-- Run->Start Debugging (F5): the program will compile, will display hello world on the ZX81 emulated screen and stop on the infinite loop
+- Set a breakpoint on line 10 inside the zx81_hello_world.asm 
+- Run->Start Debugging (F5): the program will compile and run until line 10
+- Press again F5 to finish the program
+  (note that the output to the simulated TV is built by the ROM code 50 times per simulated second during the infinite loop execution)
 
 Notes:
 - To change the program name remember to change it also in the launch.json and tasks.json files in the .vscode directory
