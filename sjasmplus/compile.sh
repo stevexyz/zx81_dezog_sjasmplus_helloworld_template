@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./clean.sh
+sjasmplus/clean.sh
 
 set -e
 
