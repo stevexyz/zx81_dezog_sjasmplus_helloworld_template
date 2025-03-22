@@ -1,6 +1,6 @@
 # ZX81 assembler projects template
 
-This project to jumpstart ZX81 assemler developments with a modern integrated IDE/debugger.
+This project to jumpstart ZX81 assembler developments with a modern integrated IDE/debugger.
 
 Project is setup to use the internal DeZog emulator.
 
