@@ -6,8 +6,6 @@
 
 # temp
 .tmp/
-sjasmplus_1.21.0
-sjasmplus
 *.idx
 *.rom
 *.old

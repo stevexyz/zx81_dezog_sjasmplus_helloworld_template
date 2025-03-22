@@ -1,8 +1,10 @@
 #!/bin/bash
 
+./clean.sh
+
 set -e
 
-sjasmplus \
+sjasmplus/sjasmplus \
     --nologo \
     --msg=war \
     --fullpath \

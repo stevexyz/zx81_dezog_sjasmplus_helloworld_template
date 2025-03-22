@@ -57,7 +57,7 @@ FRAMES   dw $FFFF       ; !! not usable
 COORDS   dw $0000       ; usable
 PR_CC    db $00         ; usable
 S_POSN   dw $0021       ; usable
-CDFLAG   db 01000000b   ; !! not usable
+CDFLAG   db %01000000   ; !! not usable
 
 ; assert $ eq $403c ; let's see if rom sysvars are ending correctly!
 

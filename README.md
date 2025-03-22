@@ -1,16 +1,15 @@
 # ZX81 assembler projects template
 
-> Attention: work in progress, do not use it for now!
+This project to jumpstart ZX81 assemler developments with a modern integrated IDE/debugger.
 
-This project to jumpstart ZX81 assemler developments with an integrated IDE/debugger.
-
-Note tha before debugging yuu need to compile the program with sjasmplus: a sample unix script is provided with all the options, you need just to change sjasmplus executable file call if not under unix and in path.
+Note that before debugging yuu need to compile the program with sjasmplus: sample script and executable are provided with all the options, but you can install the full sjasmplus and update the paths (DOS/Windows files untested for now).
 
 Project is setup to use the internal DeZog emulator.
 
-Required to be installed:
-1. Visual Studio Code with DeZog extension (https://github.com/maziac/DeZog)
-2. sjasmplus (https://github.com/z00m128/sjasmplus)
+Required to be installed: Visual Studio Code with DeZog extension (https://github.com/maziac/DeZog). Recommended full sjasmplus (https://github.com/z00m128/sjasmplus).
 
-To change the program name remember to change it also in the launch.json file in the .vscode directory.
+Notes:
+- To change the program name remember to change it also in the launch.json file in the .vscode directory.
+- When starting debug be sure to select DeZog
+- To be able to set breakpoints in the source file verify that it has beeen recognized as assembler file in the language mode (and not e.g. as a Plain Text) in the bottom right of the window
 

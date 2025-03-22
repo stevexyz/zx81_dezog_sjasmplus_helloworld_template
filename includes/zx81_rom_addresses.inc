@@ -3,7 +3,7 @@
 
 ; Some ZX81 useful ROM routines address
 
-SCANKEYB equ $02BB
+_aSCANKEYB equ $02BB
 ; The routine returns a scan code in HL consisting of two parts:
 ; Register L identifies with a low bit which one of the 8 physical rows of the key matrix has any key (except SHIFT) down
 ; 11111111 = no key down
@@ -34,8 +34,7 @@ SCANKEYB equ $02BB
 ; shf| Z X C V | B N M . sp|
 ;    +---------+-----------+
 
-ROMPAUSE  equ $0F35 ; bc=number of tv frames to wait for
-
+_aROMPAUSE  equ $0F35 ; bc=number of tv frames to wait for
 _aRESET     equ $0000
 _aSLOWFAST  equ $0207
 _aSETFAST   equ $02E7
@@ -53,9 +52,9 @@ _aSLOW      equ $0f2b
 _aDEBOUNCE  equ $0f4b
 _aSETMIN    equ $14BC
 
-; NEW ROM
+; ZX81 RAM layout
 ;
-;      +------------------+-- Top of memory (bigger address)
+;      +------------------+-- Top of memory (bigger address, 4400h for 1K RAM)
 ;  .   | Reserved area    |
 ;  .   +------------------+-- (RAMTOP)
 ;  .   | GOSUB stack      |
@@ -77,7 +76,7 @@ _aSETMIN    equ $14BC
 ;  .   | User program     |
 ;  .   +------------------+-- 407Dh (16509d)
 ;  .   | System variables |
-;      +------------------+-- 4000h (16384d)
+;      +------------------+-- 4000h (16384d, beginning of 1K RAM)
 
 ; ZX81 Memory Map and System Area (from http://www.problemkaputt.de/zxdocs.htm)
 ;
