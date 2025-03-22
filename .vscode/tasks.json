@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "make_with_sjasmplus",
+        "type": "shell",
+        "command": "${workspaceFolder}/sjasmplus/sjasmplus",
+        "args": [
+            "--nologo",
+            "--msg=war",
+            "--fullpath",
+            "--outprefix=.",
+            "--sld=zx81_hello_world.sld",
+            "--lst=zx81_hello_world.lst",
+            "--lstlab",
+            "--sym=zx81_hello_world.sym",
+            "--raw=zx81_hello_world.p",
+            "zx81_hello_world.asm"
+        ],
+        "problemMatcher": {
+            "owner": "sjasmplus",
+            "fileLocation": "autoDetect",
+            "pattern": {
+                "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*)$",
+                "file": 1,
+                "line": 2,
+                "severity": 3,
+                "message": 4
+            }
+        },
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        }
+    }]
+}

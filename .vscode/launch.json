@@ -1,25 +1,27 @@
 {
 	"version": "0.2.0",
-	"configurations": [
-		{
-			"type": "dezog",
-			"request": "launch",
-			"name": "DeZog ZSim (ZX81-1K)",
-			"remoteType": "zsim",
-			"zsim": {
-				"visualMemory": true,
-				"preset": "zx81",
-				"memoryModel": "ZX81-1K",
-			},
-			"sjasmplus": [
-				{
-					"path": "${workspaceFolder}/zx81_hello_world.sld",
-				}
-			],
-			"startAutomatically": false,
-			"rootFolder": "${workspaceFolder}",
-			"load": "zx81_hello_world.p",
-			"tmpDir": ".tmp",
+	"configurations": [{
+		"type": "dezog",
+		"request": "launch",
+		"name": "DeZog ZSim (ZX81-1K)",
+		"remoteType": "zsim",
+		"zsim": {
+			"visualMemory": true,
+			"preset": "zx81",
+			"memoryModel": "ZX81-1K",
 		},
-    ],
+		"sjasmplus": [{
+			"path": "${workspaceFolder}/zx81_hello_world.sld",
+		}],
+		"history": {
+			"reverseDebugInstructionCount": 100000,
+			"spotCount": 99,
+			"codeCoverageEnabled": true,
+		},
+		"startAutomatically": true,
+		"rootFolder": "${workspaceFolder}",
+		"load": "zx81_hello_world.p",
+		"tmpDir": ".tmp",
+                "preLaunchTask": "make_with_sjasmplus",
+	}],
 }
