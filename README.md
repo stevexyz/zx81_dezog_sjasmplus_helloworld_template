@@ -2,9 +2,9 @@
 
 This project to jumpstart ZX81 assembler developments with a modern integrated IDE/debugger.
 
-Project is setup to use the internal DeZog emulator.
+Project is setup to use the new internal ZX81 DeZog emulator.
 
-Required to be installed: Visual Studio Code with DeZog extension (https://github.com/maziac/DeZog). Recommended full sjasmplus installation (https://github.com/z00m128/sjasmplus), even if the executable provided within this repo should be enough to start.
+Required to be installed: Visual Studio Code with [DeZog extension](https://github.com/maziac/DeZog). Recommended full [sjasmplus](https://github.com/z00m128/sjasmplus) installation, even if the executable provided within this repo should be enough to start.
 
 How to start?
 - Start vscode with "code ." inside the root repo directory
@@ -20,6 +20,6 @@ Notes:
 - GitHub codespaces can be used to develop inside the browser instead of a local installation
 
 External interesting links:
-- Another very nice example that can be used to jumpstart is at: https://github.com/maziac/zx81-sample-program
-- A very nice guide on how to create a game on ZX81 is at https://sinclairzxworld.com/viewtopic.php?f=6&t=4045
+- [Another nice and elaborated example](https://github.com/maziac/zx81-sample-program) that can be used to jumpstart ZX81 assembler programming
+- [A nice guide on how to create a game](https://sinclairzxworld.com/viewtopic.php?t=4045) on ZX81
 
