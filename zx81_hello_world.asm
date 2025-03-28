@@ -1,11 +1,11 @@
  INCLUDE "includes/zx81_prologue.inc" ;|
 ;--------------------------------------/
 ; Note that in ZX81 programs there are certain restrictions:
-; in SLOW MODE do not modify the a', f', ix, iy, i and r registers (not even read the af' pair),
-; while with NMI disabled all is possible if registers are restored
+; in SLOW MODE a', f', ix, iy, i and r registers cannot be used (not even read the af' pair),
+; with NMI disabled all is possible if registers values are restored before enabling it again
 
 
-_main: ; staring address
+_main: ; starting address
 
   ld hl,display_area
   ld (D_FILE),hl ; set the display pointer to the prepared area containing hello world
@@ -13,9 +13,8 @@ _main: ; staring address
 end_program:
   jp end_program ; loop forever
 
- INCLUDE "includes/zx81_charset.inc" ; ZX81 is not ascii based
-
 display_area:
+ INCLUDE "includes/zx81_charset.inc" ; ZX81 is not ascii based
   ; collapsed display for 1k (else all the lines should be complete)
   halt ; sync screen output
   db _cH,_cE,_cL,_cL,_cO, _CR ; *HELLO* (on 2 lines and with second word in inverted colors)
