@@ -44,8 +44,8 @@ STKBOT   dw $409A     ; xx usable after asm start
 STKEND   dw $409A     ; xx usable after asm start
 BERG     db $FF       ; xx usable if not floating point usage
 MEM      dw $0000     ; xx usable after asm start
-NOTUSED  db $01       ; one byte free
-DF_SZ    db $02       ; usable
+NOTUSED  db $00       ; one byte free
+DF_SZ    db $00       ; usable
 S_TOP    dw $0000     ; usable
 LAST_K   dw $FFFF     ; !! not usable (row/column of last char pressed)
 DB_ST    db $FF       ; !! not usable (debounce))

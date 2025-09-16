@@ -12,6 +12,8 @@ _main: ; starting address
 
 end_program:
   jp end_program ; loop forever
+                 ; note that the screen will take some time to appear since the "user code"
+                 ; (this program) is executed during top and bottom borders in "slow mode"
 
 display_area:
  INCLUDE "includes/zx81_charset.inc" ; ZX81 is not ascii based

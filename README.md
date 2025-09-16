@@ -11,9 +11,9 @@ How to start?
 - Set a breakpoint on line 10 inside the zx81_hello_world.asm 
 - Run->Start Debugging (F5): the program will compile and run until line 10
 - Press again F5 to finish the program
-  (note that the output to the simulated TV is built by the ROM code 50 times per simulated second during the infinite loop execution)
 
 Notes:
+- The "user code" (e.g. the example program) is executed in the slow mode of ZX81 (the one that is showing the screen) during the top and bottom borders video generation, so in a proper emulator the actual screen of the example program will be visualized after many iterations of the infinite loop execution. Please refer to a proper guide on how the ZX81 generates the TV output (many available in internet, e.g. a deep video series of DrMattRegan https://www.youtube.com/watch?v=pVQJxV9JCSE)
 - To change the program name remember to change it also in the launch.json and tasks.json files in the .vscode directory
 - When starting debug be sure to select DeZog
 - To be able to set breakpoints in the source file verify that it has beeen recognized as assembler file in the language mode (and not e.g. as a Plain Text) in the bottom right of the window
