@@ -21,5 +21,5 @@ Notes:
 
 External interesting links:
 - [Another nice and elaborated example](https://github.com/maziac/zx81-sample-program) that can be used to jumpstart ZX81 assembler programming
-- [A nice guide on how to create a game](https://sinclairzxworld.com/viewtopic.php?t=4045) on ZX81
+- [A nice guide on how to create a game](https://sinclairzxworld.com/viewtopic.php?t=4045), and [39 pages to get every byte out of the 1K ZX81!](https://www.sinclairzxworld.com/download/file.php?id=12563) from the unbeatable Dr Beep!
 
