@@ -2,7 +2,12 @@
 ;--------------------------------------/
 ; Note that in ZX81 programs there are certain restrictions:
 ; in SLOW MODE a', f', ix, iy, i and r registers cannot be used (not even read the af' pair),
-; with NMI disabled all is possible if registers values are restored before enabling it again
+; with NMI disabled all is possible if registers values are restored before enabling it again;
+; pay attention on what you put in the screen area: a line can be maximum 32 character and should
+; always end with CR ($76 or halt instruction), moreover the screen should always start end end
+; with CRs and to avoid to define all the 24 lines after the last CR a "jp (hl)" can be used;
+; lastly note that for all bytes that are present in the screen area with bit 6 set, the corresponding
+; Z80 instruction will be executed (there are many in depth explanations on ZX81 TV rendering)
 
 
 _main: ; starting address
