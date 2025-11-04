@@ -13,11 +13,11 @@ How to start?
 - Press again F5 to finish the program
 
 Notes:
-- The "user code" (e.g. the example program) is executed in the slow mode of ZX81 (the one that is showing the screen) during the top and bottom borders video generation, so in a proper emulator the actual screen of the example program will be visualized after many iterations of the infinite loop execution. Please refer to a proper guide on how the ZX81 generates the TV output (many available in internet, e.g. a deep video series of DrMattRegan https://www.youtube.com/watch?v=pVQJxV9JCSE)
+- The "user code" (e.g. the example program) is normally executed in the slow mode of ZX81 (the one that is showing the screen) during the top and bottom borders video generation, so in a proper emulator the actual screen of the example program will be visualized after many iterations of the infinite loop execution (until border section ends). Please refer to a proper guide on how the ZX81 generates the TV output (many available in internet, e.g. a deep video series of DrMattRegan https://www.youtube.com/watch?v=pVQJxV9JCSE)
 - To change the program name remember to change it also in the launch.json and tasks.json files in the .vscode directory
 - When starting debug be sure to select DeZog
 - To be able to set breakpoints in the source file verify that it has beeen recognized as assembler file in the language mode (and not e.g. as a Plain Text) in the bottom right of the window
-- GitHub codespaces can be used to develop inside the browser instead of a local installation
+- [GitHub codespaces](https://docs.github.com/en/codespaces/quickstart) can be used to develop directly inside the browser instead of a local installation (try it immediately, clicking on the green "<> Code" button above and selecting codespaces!)
 
 External interesting links:
 - [Another nice and elaborated example](https://github.com/maziac/zx81-sample-program) that can be used to jumpstart ZX81 assembler programming
