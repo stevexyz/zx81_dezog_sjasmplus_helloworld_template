@@ -31,3 +31,5 @@ display_area:
 
 ;--------------------------------------\
  INCLUDE "includes/zx81_epilogue.inc" ;|
+
+  assert $ < ($4000 + 949)
