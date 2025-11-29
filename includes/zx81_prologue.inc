@@ -26,7 +26,7 @@ PPC     equ $4007
 ;DF_CC    dw $4097     ; usable if not using rst 10h or similar
 ;VARS     dw $4097     ; usable if not using basic vars
 ;DEST     dw $0000     ; usable
-;-- the above variables space is used for basic startup 
+;-- the above variables space is used for the "basic" startup below 
 startup:
     nop : jp _main ; basic dw "line number" (big endian) and dw lenght (little endian)
 D_FILE equ $400C ; just keep address
@@ -62,7 +62,7 @@ PR_CC    db $00       ; usable
 S_POSN   dw $0021     ; usable
 CDFLAG   db %01000000 ; !! not usable
 
-; assert $ eq $403c ; let's see if rom sysvars are ending correctly!
+ assert($==$403c) ; let's see if rom sysvars are ending correctly!
 
 ;---
 ;PRTBUF   db 33 dup (0)

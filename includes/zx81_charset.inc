@@ -1,27 +1,28 @@
 
 ;====================================================
 
-; ZX81 character set
-;  ____0___1___2___3___4___5___6___7___8___9___A___B___C___D___E___F____
-;  00 SPC GRA GRA GRA GRA GRA GRA GRA GRA GRA GRA  "  GBP  $   :   ?  0F
-;  10  (   )   >   <   =   +   -   *   /   ;   ,   .   0   1   2   3  1F
-;  20  4   5   6   7   8   9   A   B   C   D   E   F   G   H   I   J  2F
-;  30  K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z  3F
+; ZX81 character set:
+; Hex  __0___1___2___3___4___5___6___7___8___9___A___B___C___D___E___F__
+;  00 | SPC GRA GRA GRA GRA GRA GRA GRA GRA GRA GRA  "   £   $   :   ? 
+;  10 |  (   )   >   <   =   +   -   *   /   ;   ,   .   0   1   2   3 
+;  20 |  4   5   6   7   8   9   A   B   C   D   E   F   G   H   I   J 
+;  30 |  K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z  
+; Add $80 for the negative
 
-_CR equ $76
-_QT equ $0B
-_CL equ $0e
-_OB equ $10
-_CB equ $11
-_GT equ $12
-_LT equ $13
-_EQ equ $14
-_PL equ $15
-_MN equ $16
-_FS equ $18
-_SC equ $19
-_DT equ $1b
-_c0 equ $1c
+; Pseudo graphics:
+;
+; SOLID: 0 ..  1 #.  2 .#  3 ##  4 ..  5 #.  6 .#  7 ##
+;          ..    ..    ..    ..    #.    #.    #.    #.
+;
+; Greyish: 8 %%  9 ..  A %%
+;            %%    %%    ..
+
+_NL equ $76 ; new line (halt instruction for compressed video)
+
+___ equ $00 ; space
+_i_ equ $80 ; black square (inverse space)
+
+_c0 equ $1c ; numbers
 _c1 equ $1d
 _c2 equ $1e
 _c3 equ $1f
@@ -31,8 +32,8 @@ _c6 equ $22
 _c7 equ $23
 _c8 equ $24
 _c9 equ $25
-___ equ $00
-_cA equ $26
+
+_cA equ $26 ; letters
 _cB equ $27
 _cC equ $28
 _cD equ $29
@@ -58,8 +59,8 @@ _cW equ $3c
 _cX equ $3d
 _cY equ $3e
 _cZ equ $3f
-_i_ equ $80
-_i0 equ $9c
+
+_i0 equ $9c ; inverse numbers
 _i1 equ $9d
 _i2 equ $9e
 _i3 equ $9f
@@ -69,7 +70,8 @@ _i6 equ $A2
 _i7 equ $A3
 _i8 equ $A4
 _i9 equ $A5
-_iA equ $A6
+
+_iA equ $A6 ; inverse letters
 _iB equ $A7
 _iC equ $A8
 _iD equ $A9
@@ -95,3 +97,4 @@ _iW equ $Bc
 _iX equ $Bd
 _iY equ $Be
 _iZ equ $Bf
+
