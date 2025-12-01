@@ -9,6 +9,13 @@
 			"visualMemory": true,
 			"preset": "zx81",
 			"memoryModel": "ZX81-1K",
+            "customVisualMemBlocks": [
+                {"address": "0x4000", "size": "0x400",},
+            ],
+            "ulaOptions": {
+                "hires": false,
+                "borderSize": 1,
+            },
 		},
 		"sjasmplus": [{
 			"path": "${workspaceFolder}/zx81_hello_world.sld",
