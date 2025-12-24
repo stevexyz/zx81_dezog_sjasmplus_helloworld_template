@@ -18,7 +18,3 @@ Notes:
 Further reading:
 - [A nice guide on how to create a game](https://sinclairzxworld.com/viewtopic.php?t=4045), and [39 pages to get every byte out of the 1K ZX81!](https://www.sinclairzxworld.com/download/file.php?id=12563) from the unbeatable Dr Beep!
 - [A handy reference of everything](https://problemkaputt.de/zxdocs.htm#zx80zx81) by Martin Korth
-
-Advanced topics:
-- [Details about the video systems](https://quix.us/timex/rigter/ZX@20Video@20Tutorial.html) by Wilf Ritger
-- The "user code" (e.g. the example program) is normally executed in the slow mode of ZX81 (the one that is showing the screen) during the top and bottom borders video generation, so in a proper emulator the actual screen of the example program will be visualized after many iterations of the infinite loop execution (until border section ends). Please refer to a proper guide on how the ZX81 generates the TV output (many available on the internet, e.g. a deep [video series of DrMattRegan](https://www.youtube.com/watch?v=pVQJxV9JCSE))
