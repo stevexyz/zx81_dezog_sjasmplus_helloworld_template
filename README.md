@@ -17,4 +17,4 @@ Notes:
 
 Further reading:
 - [A nice guide on how to create a game](https://sinclairzxworld.com/viewtopic.php?t=4045), and [39 pages to get every byte out of the 1K ZX81!](https://www.sinclairzxworld.com/download/file.php?id=12563) from the unbeatable Dr Beep!
-- [A handy reference of everything](https://problemkaputt.de/zxdocs.htm#zx80zx81) by Martin Korth
+- [A handy reference of everything](https://problemkaputt.de/zxdocs.htm#zx80zx81) by Martin Korth, and [another one](https://sebastien.andrivet.com/fr/posts/my-first-computer-sinclair-zx81/) by Sebastien Andrivet
