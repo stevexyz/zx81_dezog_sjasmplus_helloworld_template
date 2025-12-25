@@ -1,12 +1,12 @@
 # ZX81 assembler projects template
 
-This repository is a starter template for developing ZX81 assembler programs using VS Code and the [DeZog extension](https://github.com/maziac/DeZog).
+This repository is a starter template for developing ZX81 assembler programs using VS Code and the fantastic [DeZog extension](https://github.com/maziac/DeZog).
 
 Quick start:
 - Fork this repository in order to have your own writable copy as starting point
-- Start VS Code (with "code ." inside the repo directory, or with a new codespace)
+- Start VS Code (inside the cloned repo directory, or within a new codespace)
 - Install the DeZog extension if not already done
-- Open "zx81_hello_world.asm" and start debugging (select DeZog as the debugger if prompted)
+- Open "zx81_hello_world.asm" and start coding/debugging (select DeZog as the debugger if prompted)
 
 Notes:
 - To change the program name remember to change it also in the launch.json and tasks.json files in the .vscode directory for compilation and debugging to work
