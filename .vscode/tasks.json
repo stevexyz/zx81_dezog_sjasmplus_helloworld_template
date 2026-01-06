@@ -6,6 +6,7 @@
         "command": "${workspaceFolder}/sjasmplus/sjasmplus",
         "args": [
             "--nologo",
+            "--dirbol",
             "--msg=war",
             "--fullpath",
             "--outprefix=.",
